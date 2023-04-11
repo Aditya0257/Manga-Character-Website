@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("assets/fonts/futura/Futura Bold font.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 300 800;
+}
+html {
+  font-size: 62.5%;
+  font-family: Labrada;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.appearancepage_image {
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+}
+.appearancepage_image .black_shaded_gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left bottom, rgba(255, 0, 0, 0.01), black);
+}
+.appearancepage_image .itachi_background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.appearancepage_image .nav_menu_content {
+  position: absolute;
+  left: 4vw;
+  top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appearancepage_image .nav_menu_content .sharingan_logo {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.appearancepage_image .nav_menu_content .spin {
+  animation: spin-wheel 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes spin-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+  }
+}
+.appearancepage_image .nav_menu_content .navbar_panel {
+  width: 600px;
+  height: 45px;
+  opacity: 0;
+  transition: opacity 2s;
+  z-index: 10;
+  background-color: rgba(99, 17, 17, 0.364);
+  border-radius: 15px 50px 30px 5px;
+}
+.appearancepage_image .nav_menu_content .navbar_panel .nav_text_content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #d1d1d1;
+  margin-top: 4px;
+  line-height: 1.3;
+  font-size: 2.7rem;
+  font-weight: 300;
+}
+.appearancepage_image .text_container {
+  position: absolute;
+  left: 14vw;
+  top: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35vh;
+  width: 32vw;
+  color: #d1d1d1;
+  line-height: 1.3;
+}
+.appearancepage_image .text_container p {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.appearancepage_image .text_container h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.appearancepage_image .text_container h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.appearancepage_image .text_container h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.enhanced_dark_boxes_1 {
+  position: relative;
+  margin-top: 5vh;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enhanced_dark_boxes_1 .first_outer_box {
+  position: relative;
+  height: 73%;
+  width: 41%;
+  display: flex;
+  padding-left: 2%;
+  background-color: rgba(129, 12, 12, 0.256);
+}
+.enhanced_dark_boxes_1 .first_outer_box .first_box {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #d1d1d1;
+}
+.enhanced_dark_boxes_1 .first_outer_box .first_box .spacer_vertical_small {
+  height: 4%;
+  width: 40%;
+}
+.enhanced_dark_boxes_1 .first_outer_box .first_box h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.enhanced_dark_boxes_1 .first_outer_box .first_box p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.enhanced_dark_boxes_1 .first_outer_box .first_box h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.enhanced_dark_boxes_1 .first_outer_box img {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+.enhanced_dark_boxes_1 .spacing_box {
+  width: 3.5%;
+  height: 73%;
+}
+.enhanced_dark_boxes_1 .second_outer_box {
+  position: relative;
+  height: 73%;
+  width: 41%;
+  display: flex;
+  padding-left: 2%;
+  background-color: rgba(129, 12, 12, 0.256);
+}
+.enhanced_dark_boxes_1 .second_outer_box .second_box {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #d1d1d1;
+}
+.enhanced_dark_boxes_1 .second_outer_box .second_box .spacer_vertical_small {
+  height: 4%;
+  width: 40%;
+}
+.enhanced_dark_boxes_1 .second_outer_box .second_box h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.enhanced_dark_boxes_1 .second_outer_box .second_box p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.enhanced_dark_boxes_1 .second_outer_box .second_box h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.enhanced_dark_boxes_1 .second_outer_box img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.enhanced_dark_boxes_1 .second_outer_box .white_box {
+  position: absolute;
+  bottom: -25%;
+  right: -4%;
+  height: 45%;
+  width: 16%;
+  background-color: #d1d1d1;
+}
+
+.black_strip_box {
+  position: relative;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(129, 12, 12, 0.247);
+  display: flex;
+  justify-content: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.black_strip_box .first_img_column {
+  position: relative;
+  height: 100%;
+  width: 32%;
+}
+.black_strip_box .first_img_column img {
+  position: absolute;
+  bottom: -17%;
+  width: 110%;
+  z-index: 3;
+  border-radius: 10px;
+}
+.black_strip_box .first_img_column .white_box {
+  position: absolute;
+  bottom: -40%;
+  left: -16%;
+  height: 60%;
+  width: 35%;
+  z-index: 2;
+  background-color: #d1d1d1;
+}
+.black_strip_box .spacer_horizontal_small {
+  width: 9%;
+  height: 100%;
+}
+.black_strip_box .second_text_column {
+  height: 100%;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #d1d1d1;
+}
+.black_strip_box .second_text_column .spacer_vertical_small {
+  height: 4%;
+  width: 40%;
+}
+.black_strip_box .second_text_column h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.black_strip_box .second_text_column p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.black_strip_box .second_text_column h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.enhanced_dark_boxes_2 {
+  position: relative;
+  margin-top: 8vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enhanced_dark_boxes_2 .first_text_box {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #d1d1d1;
+}
+.enhanced_dark_boxes_2 .first_text_box .spacer_vertical_small {
+  height: 4%;
+  width: 40%;
+}
+.enhanced_dark_boxes_2 .first_text_box h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgba(255, 0, 0, 0.378);
+}
+.enhanced_dark_boxes_2 .first_text_box p {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.enhanced_dark_boxes_2 .first_text_box h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.enhanced_dark_boxes_2 .spacer_horizontal {
+  width: 3%;
+  height: 100%;
+}
+.enhanced_dark_boxes_2 .second_images_box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.enhanced_dark_boxes_2 .second_images_box .first_img {
+  height: 100%;
+  width: 34%;
+}
+.enhanced_dark_boxes_2 .second_images_box .first_img img {
+  height: 96%;
+  width: 100%;
+}
+.enhanced_dark_boxes_2 .second_images_box .spacer_horizontal_small {
+  width: 5%;
+  height: 100%;
+}
+.enhanced_dark_boxes_2 .second_images_box .second_img {
+  height: 100%;
+  width: 34%;
+}
+.enhanced_dark_boxes_2 .second_images_box .second_img img {
+  height: 96%;
+  width: 100%;
+}
+.enhanced_dark_boxes_2 .second_images_box .spacer_horizontal_small {
+  width: 5%;
+  height: 100%;
+}
+.enhanced_dark_boxes_2 .second_images_box .third_img {
+  height: 100%;
+  width: 34%;
+}
+.enhanced_dark_boxes_2 .second_images_box .third_img img {
+  height: 96%;
+  width: 100%;
+}
+.enhanced_dark_boxes_2 .footer_content {
+  position: absolute;
+  top: 110%;
+  height: 730px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.enhanced_dark_boxes_2 .footer_content img {
+  z-index: 2;
+  width: 90%;
+}
+.enhanced_dark_boxes_2 .footer_content .itachi_logo {
+  z-index: 2;
+  width: 11.5%;
+  left: 45%;
+  right: 45%;
+}
+.enhanced_dark_boxes_2 .footer_content .footer_text_content {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+  font-size: 2rem;
+  color: #d1d1d1;
+  font-family: Futura;
+  font-weight: 400;
+  line-height: 1.5;
+}/*# sourceMappingURL=apprearance.css.map */

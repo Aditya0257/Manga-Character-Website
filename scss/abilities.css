@@ -1,0 +1,880 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("assets/fonts/futura/Futura Bold font.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 300 800;
+}
+html {
+  font-size: 62.5%;
+  font-family: Labrada;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.abilitiespage_image {
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+}
+.abilitiespage_image .black_shaded_gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left bottom, rgba(255, 0, 0, 0.01), black);
+}
+.abilitiespage_image .moving_crows_gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.abilitiespage_image .itachi_background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+  width: 100%;
+  height: 100%;
+}
+.abilitiespage_image .nav_menu_content {
+  position: absolute;
+  left: 4vw;
+  top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abilitiespage_image .nav_menu_content .sharingan_logo {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.abilitiespage_image .nav_menu_content .spin {
+  animation: spin-wheel 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes spin-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+  }
+}
+.abilitiespage_image .nav_menu_content .navbar_panel {
+  width: 600px;
+  height: 45px;
+  opacity: 0;
+  transition: opacity 2s;
+  z-index: 10;
+  background-color: rgba(99, 17, 17, 0.364);
+  border-radius: 15px 50px 30px 5px;
+}
+.abilitiespage_image .nav_menu_content .navbar_panel .nav_text_content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #d1d1d1;
+  margin-top: 4px;
+  line-height: 1.3;
+  font-size: 2.7rem;
+  font-weight: 300;
+}
+.abilitiespage_image .text_container {
+  position: absolute;
+  left: 4vw;
+  top: 70vh;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  width: 80vw;
+}
+.abilitiespage_image .text_container .itachi_abilities_text {
+  margin-left: 2vw;
+  color: #d1d1d1;
+  line-height: 1.3;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.enhanced_divider {
+  position: relative;
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enhanced_divider .fade_rule {
+  position: absolute;
+  z-index: 0;
+  height: 1px;
+  background-color: #E6E6E6;
+  width: 66rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to left, grey 10%, white 50%, grey 90%);
+}
+.enhanced_divider .uchicha_clan_logo {
+  z-index: 1;
+  height: 50px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.jutsus_main_content_1 {
+  position: relative;
+  height: 1800px;
+  width: 100%;
+}
+.jutsus_main_content_1 .brush_stroke_1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2.2%;
+  left: 4vw;
+  height: 230px;
+  width: 1180px;
+}
+.jutsus_main_content_1 .brush_stroke_1 img {
+  width: 100%;
+  height: 100%;
+}
+.jutsus_main_content_1 .brush_stroke_1 h1 {
+  position: absolute;
+  margin-right: 45px;
+  margin-bottom: 20px;
+  font-family: Oswald;
+  font-size: 7rem;
+  transform-origin: 0 0;
+  transform: rotate(-1.1deg);
+}
+.jutsus_main_content_1 .info_outer_video_box_1 {
+  position: absolute;
+  top: 21%;
+  height: 33.7%;
+  left: 11vw;
+  right: 19vw;
+  z-index: 5;
+  border-radius: 225px 50px 10px;
+}
+.jutsus_main_content_1 .info_outer_video_box_1 video {
+  height: 100%;
+  width: 100%;
+  border-radius: 225px 50px 0px;
+  z-index: 6;
+}
+.jutsus_main_content_1 .info_outer_video_box_1 .bottom_video_covering_strip {
+  position: absolute;
+  bottom: 0;
+  height: 11.9%;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+}
+.jutsus_main_content_1 .info_outer_box_1 {
+  position: absolute;
+  top: 21%;
+  height: 29.7%;
+  left: 11vw;
+  right: 19vw;
+  z-index: 8;
+  border-radius: 225px 0px 10px;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex {
+  position: absolute;
+  top: 10%;
+  bottom: 85%;
+  right: 3%;
+  left: 14%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 13;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex p {
+  font-size: 2.2rem;
+  font-family: Futura;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex .left_content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex .left_content .first_left_content {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img {
+  width: 15%;
+  height: 100%;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex .left_content .second_left_content {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_1 .info_outer_box_1 .top_text_flex .right_content {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_1 .info_outer_box_1 .left_text_flex {
+  position: absolute;
+  top: 24%;
+  right: 55%;
+  left: 10%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.jutsus_main_content_1 .info_outer_box_1 .right_text_flex {
+  position: absolute;
+  top: 26%;
+  left: 85%;
+  right: 3%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.jutsus_main_content_1 .info_outer_box_1 .right_text_flex h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.jutsus_main_content_1 .info_outer_box_1 .right_text_flex h1 {
+  margin-bottom: 8px;
+}
+.jutsus_main_content_1 .info_outer_box_1 h1 {
+  font-size: 3.1rem;
+  font-weight: 500;
+  font-family: Futura;
+  color: white;
+}
+.jutsus_main_content_1 .info_outer_box_1 h2 {
+  font-size: 1.8rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_1 .info_outer_box_1 p {
+  font-size: 1.2rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_1 .info_outer_box_1 img {
+  height: 118%;
+  position: absolute;
+  left: 47.8%;
+  bottom: 0.3%;
+  transition: height 0.15s ease-in-out, width 0.15s ease-in-out;
+}
+.jutsus_main_content_1 .info_outer_box_1 img:hover {
+  height: 122%;
+}
+.jutsus_main_content_1 .info_outer_video_box_2 {
+  position: absolute;
+  top: 55%;
+  height: 33.7%;
+  left: 23vw;
+  right: 7vw;
+  z-index: 5;
+  border-radius: 225px 50px 10px;
+}
+.jutsus_main_content_1 .info_outer_video_box_2 video {
+  height: 100%;
+  width: 100%;
+  border-radius: 225px 50px 0px;
+  z-index: 6;
+}
+.jutsus_main_content_1 .info_outer_video_box_2 .bottom_video_covering_strip {
+  position: absolute;
+  bottom: 0;
+  height: 11.9%;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+}
+.jutsus_main_content_1 .info_outer_box_2 {
+  position: absolute;
+  top: 55%;
+  height: 29.7%;
+  left: 23vw;
+  right: 7vw;
+  z-index: 8;
+  border-radius: 225px 0px 10px;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex {
+  position: absolute;
+  top: 10%;
+  bottom: 85%;
+  right: 3%;
+  left: 14%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 13;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex p {
+  font-size: 2.2rem;
+  font-family: Futura;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex .left_content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex .left_content .first_left_content {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img {
+  width: 15%;
+  height: 100%;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex .left_content .second_left_content {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_1 .info_outer_box_2 .top_text_flex .right_content {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_1 .info_outer_box_2 .left_text_flex {
+  position: absolute;
+  top: 24%;
+  right: 55%;
+  left: 10%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.jutsus_main_content_1 .info_outer_box_2 .right_text_flex {
+  position: absolute;
+  top: 26%;
+  left: 85%;
+  right: 3%;
+  bottom: 5%;
+  display: flex;
+  z-index: 5;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.jutsus_main_content_1 .info_outer_box_2 .right_text_flex h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.jutsus_main_content_1 .info_outer_box_2 .right_text_flex h1 {
+  margin-bottom: 8px;
+}
+.jutsus_main_content_1 .info_outer_box_2 h1 {
+  font-size: 3.1rem;
+  font-weight: 500;
+  font-family: Futura;
+  color: white;
+}
+.jutsus_main_content_1 .info_outer_box_2 h2 {
+  font-size: 1.8rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_1 .info_outer_box_2 p {
+  font-size: 1.2rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_1 .info_outer_box_2 img {
+  height: 100%;
+  position: absolute;
+  left: 45.8%;
+  bottom: 0.3%;
+  transition: height 0.15s ease-in-out, width 0.15s ease-in-out;
+}
+.jutsus_main_content_1 .info_outer_box_2 img:hover {
+  height: 102%;
+}
+
+.jutsus_main_content_2 {
+  position: relative;
+  height: 1800px;
+  width: 100%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img {
+  position: absolute;
+  top: -19%;
+  width: 100%;
+  height: 32%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_1 {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  width: 10%;
+  height: 25%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_2 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  width: 7%;
+  height: 17%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_3 {
+  position: absolute;
+  top: 29%;
+  left: 30%;
+  width: 7%;
+  height: 17%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_4 {
+  position: absolute;
+  top: 11%;
+  left: 1%;
+  width: 7%;
+  height: 17%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_5 {
+  position: absolute;
+  top: -65%;
+  left: 11%;
+  width: 10%;
+  height: 25%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_6 {
+  position: absolute;
+  bottom: -120%;
+  right: 5%;
+  width: 5.5%;
+  height: 14%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_7 {
+  position: absolute;
+  top: -120%;
+  right: 6%;
+  width: 9%;
+  height: 23%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .star_8 {
+  position: absolute;
+  bottom: -180%;
+  left: 4%;
+  width: 10%;
+  height: 25%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .walking_fence {
+  position: absolute;
+  bottom: -1.5%;
+  left: 1%;
+  width: 69%;
+  height: 4%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .itachi_image_1 {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  width: 35%;
+  height: 54%;
+  transform: scaleX(-1) rotate(2deg);
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .naruto_gif_1 {
+  position: absolute;
+  bottom: 2%;
+  left: 34%;
+  width: 15%;
+  height: 26%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .sasuke_gif_1 {
+  position: absolute;
+  bottom: 1%;
+  left: 42%;
+  width: 10%;
+  height: 28%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .sakura_gif_1 {
+  position: absolute;
+  bottom: 2%;
+  left: 49%;
+  width: 6.5%;
+  height: 25%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .shikamaru_gif_1 {
+  position: absolute;
+  bottom: 2%;
+  left: 54%;
+  width: 5%;
+  height: 25%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .gara_gif_1 {
+  position: absolute;
+  bottom: 1%;
+  left: 57%;
+  width: 7%;
+  height: 26%;
+}
+.jutsus_main_content_2 .wrapped_cartoonistic_img .hinata_gif_1 {
+  position: absolute;
+  bottom: 2%;
+  left: 62%;
+  width: 7%;
+  height: 26%;
+}
+.jutsus_main_content_2 .info_outer_video_box_1 {
+  position: absolute;
+  top: 21%;
+  height: 33.7%;
+  left: 11vw;
+  right: 19vw;
+  z-index: 5;
+  border-radius: 225px 50px 10px;
+}
+.jutsus_main_content_2 .info_outer_video_box_1 video {
+  height: 100%;
+  width: 100%;
+  border-radius: 225px 50px 0px;
+  z-index: 6;
+}
+.jutsus_main_content_2 .info_outer_video_box_1 .bottom_video_covering_strip {
+  position: absolute;
+  bottom: 0;
+  height: 11.9%;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+}
+.jutsus_main_content_2 .info_outer_box_1 {
+  position: absolute;
+  top: 21%;
+  height: 29.7%;
+  left: 11vw;
+  right: 19vw;
+  z-index: 8;
+  border-radius: 225px 0px 10px;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex {
+  position: absolute;
+  top: 10%;
+  bottom: 85%;
+  right: 3%;
+  left: 14%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 13;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex p {
+  font-size: 2.2rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex .left_content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex .left_content .first_left_content {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img {
+  width: 15%;
+  height: 100%;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex .left_content .second_left_content {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_2 .info_outer_box_1 .top_text_flex .right_content {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_2 .info_outer_box_1 .left_text_flex {
+  position: absolute;
+  top: 24%;
+  right: 55%;
+  left: 10%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.jutsus_main_content_2 .info_outer_box_1 .right_text_flex {
+  position: absolute;
+  top: 26%;
+  left: 85%;
+  right: 3%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.jutsus_main_content_2 .info_outer_box_1 .right_text_flex h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.jutsus_main_content_2 .info_outer_box_1 .right_text_flex h1 {
+  margin-bottom: 8px;
+}
+.jutsus_main_content_2 .info_outer_box_1 h1 {
+  font-size: 3.1rem;
+  font-weight: 500;
+  font-family: Futura;
+  color: white;
+}
+.jutsus_main_content_2 .info_outer_box_1 h2 {
+  font-size: 1.8rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_2 .info_outer_box_1 p {
+  font-size: 1.2rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_2 .info_outer_box_1 img {
+  height: 134%;
+  position: absolute;
+  left: 47.8%;
+  bottom: 0;
+  transition: height 0.15s ease-in-out, width 0.15s ease-in-out;
+}
+.jutsus_main_content_2 .info_outer_box_1 img:hover {
+  height: 137%;
+}
+.jutsus_main_content_2 .info_outer_video_box_2 {
+  position: absolute;
+  top: 55%;
+  height: 33.7%;
+  left: 23vw;
+  right: 7vw;
+  z-index: 5;
+  border-radius: 225px 50px 10px;
+}
+.jutsus_main_content_2 .info_outer_video_box_2 video {
+  height: 100%;
+  width: 100%;
+  border-radius: 225px 50px 0px;
+  z-index: 6;
+}
+.jutsus_main_content_2 .info_outer_video_box_2 .bottom_video_covering_strip {
+  position: absolute;
+  bottom: 0;
+  height: 11.9%;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+}
+.jutsus_main_content_2 .info_outer_box_2 {
+  position: absolute;
+  top: 55%;
+  height: 29.7%;
+  left: 23vw;
+  right: 7vw;
+  z-index: 8;
+  border-radius: 225px 0px 10px;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex {
+  position: absolute;
+  top: 10%;
+  bottom: 85%;
+  right: 3%;
+  left: 14%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 13;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex p {
+  font-size: 2.2rem;
+  font-family: Futura;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex .left_content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex .left_content .first_left_content {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img {
+  width: 15%;
+  height: 100%;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex .left_content .first_left_content .three_dots_vertical_icon_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex .left_content .second_left_content {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_2 .info_outer_box_2 .top_text_flex .right_content {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jutsus_main_content_2 .info_outer_box_2 .left_text_flex {
+  position: absolute;
+  top: 24%;
+  right: 55%;
+  left: 10%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.jutsus_main_content_2 .info_outer_box_2 .right_text_flex {
+  position: absolute;
+  top: 26%;
+  left: 85%;
+  right: 3%;
+  bottom: 5%;
+  display: flex;
+  z-index: 5;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.jutsus_main_content_2 .info_outer_box_2 .right_text_flex h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.jutsus_main_content_2 .info_outer_box_2 .right_text_flex h1 {
+  margin-bottom: 8px;
+}
+.jutsus_main_content_2 .info_outer_box_2 h1 {
+  font-size: 3.1rem;
+  font-weight: 500;
+  font-family: Futura;
+  color: white;
+}
+.jutsus_main_content_2 .info_outer_box_2 h2 {
+  font-size: 1.8rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_2 .info_outer_box_2 p {
+  font-size: 1.2rem;
+  font-family: Futura;
+  color: #d1d1d1;
+}
+.jutsus_main_content_2 .info_outer_box_2 img {
+  height: 134%;
+  position: absolute;
+  left: 40.8%;
+  bottom: 0;
+  transition: height 0.15s ease-in-out, width 0.15s ease-in-out;
+}
+.jutsus_main_content_2 .info_outer_box_2 img:hover {
+  height: 137%;
+}
+.jutsus_main_content_2 .footer_content {
+  position: absolute;
+  top: 92%;
+  height: 730px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.jutsus_main_content_2 .footer_content img {
+  z-index: 2;
+  width: 90%;
+}
+.jutsus_main_content_2 .footer_content .itachi_logo {
+  z-index: 2;
+  width: 11.5%;
+  left: 45%;
+  right: 45%;
+}
+.jutsus_main_content_2 .footer_content .footer_text_content {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+  font-size: 2rem;
+  color: #d1d1d1;
+  font-family: Futura;
+  font-weight: 400;
+  line-height: 1.5;
+}/*# sourceMappingURL=abilities.css.map */
